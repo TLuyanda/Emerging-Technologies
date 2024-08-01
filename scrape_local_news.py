@@ -4,9 +4,9 @@ import requests
 from bs4 import BeautifulSoup
 
 # URL of the website you want to scrape
-url = 'https://www.msn.com/en-za/sports/other/daniel-ricciardo-given-red-bull-lifeline-after-surprise-sergio-perez-call/ar-BB1qSCl3?ocid=entnewsntp&pc=LCTS&cvid=5d7e692929ac45488828eede6369c632&ei=40'  # Replace with the actual URL of the local news website
+url = 'https://github.com/'  # Replace with the actual URL of the local news website
 
-def scrape_headlines():
+def scrape_headlines(url):
     try:
         # Send a GET request to the website
         response = requests.get(url)
@@ -27,4 +27,5 @@ def scrape_headlines():
         print(f"Failed to retrieve the webpage. Error: {e}")
 
 if __name__ == "__main__":
-    scrape_headlines()
+    scrape_headlines(url)
+
